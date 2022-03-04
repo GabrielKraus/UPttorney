@@ -1,0 +1,60 @@
+.navbar{
+    background-color: #3A2F0B;
+}
+
+body{
+    background-color: #464135;
+}
+
+.titulo h2{
+    background: rgba(255, 255, 255, .5);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* index */
+.imagenDefondo{
+    background-image: url(./maderafondo.jpg);
+}
+#homeTitulo{
+    background: rgba(255, 255, 255, .5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    
+}
+#homeImages{
+    max-width: 250px;
+    max-height: 250px;
+}
+.contenidoServicios{
+    background-color: #B3AA99;
+}
+.inicioBoton{
+    background: none;
+    color: #111;
+    border-color: #111;
+}
+.inicioBoton:hover{
+    background-color: #464135;
+    border-color: #111;
+    color: rgb(255, 255, 255);
+}
+
+
+/* servicios */
+.contenidoServicios{
+    background-color: #B3AA99;
+}
+.serviciosBoton{
+    background: none;
+    color: #111;
+    border-color: #111;
+}
+
+.serviciosBoton:hover{
+    background-color: #464135;
+    border-color: #111;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
