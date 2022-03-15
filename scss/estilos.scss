@@ -1,0 +1,90 @@
+@mixin Boton{
+    border-color: #111;
+    background: none;
+    color: #111;
+}
+@mixin BotonHover{
+    background-color: rgb(142, 142, 142);
+    border-color: #111;
+    color: #111;
+}
+
+$colores:(
+    colorFondo: #464135,
+    colorRelleno: #B3AA99,
+    colorRelleno2: #3A2F0B,
+);
+.navbar{
+    background-color: map-get($colores, colorRelleno2);
+}
+body{
+    background-color: map-get($colores, colorFondo);
+    .titulo h2{
+        background: rgba(255, 255, 255, .5);
+        box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    }
+}
+.imagenDefondo{
+    background-image: url(./maderafondo.jpg);
+    #homeTitulo{
+        background: rgba(255, 255, 255, .5);
+        box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    }
+}
+#homeImages{
+    max-width: 250px;
+    max-height: 250px;
+}
+.contenidoServicios{
+    background-color: map-get($colores, colorRelleno);
+}
+.inicioBoton{
+    @include Boton;
+    
+}
+.inicioBoton:hover{
+    @include BotonHover;
+}
+/* Nuestro Equipo */
+.personaFoto{
+    max-width: 400px;
+    .persona img{
+        max-width: 400px;
+        max-height: 368px;
+    }
+}
+.persona {
+    .descripcion{
+        max-width: 400px;
+        background-color: map-get($colores, colorRelleno);
+    }
+}
+/* servicios */
+.contenidoServicios{
+    background-color: map-get($colores, colorRelleno);
+    .serviciosBoton{
+        @include Boton;
+    }
+    
+    .serviciosBoton:hover{
+        @include BotonHover;
+    }
+}
+/* Sobre nosotros */
+.contenidoNosotros{
+    background-color: map-get($colores, colorRelleno);
+}
+/* contactanos */
+.redes{
+    .red{
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+.contactoBoton{
+    border: solid 2px black;
+    background-color: map-get($colores, colorRelleno2);
+    color: #fff !important;
+}
